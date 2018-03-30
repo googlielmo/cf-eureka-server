@@ -5,7 +5,7 @@ This manual shows how to deploy and use Eureka Service on Cloud Foundry.
 ### Deploy Eureka Service to CF
 
     $ mvn clean package
-    $ cf push
+    $ cf push -b https://github.com/cloudfoundry/java-buildpack.git
     $ cf apps
     Getting apps in org maki-org / space development as admin...
     OK
